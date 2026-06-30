@@ -1,0 +1,1162 @@
+body{
+    background: black;
+    color: white;
+}
+
+.projects.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*========== Breadcrumb ==========*/
+.breadcrumb{
+    width:90%;
+    margin:40px auto 25px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.breadcrumb-link{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#d8d8d8;
+    font-size:16px;
+    transition:.3s;
+}
+
+.breadcrumb-link:hover{
+    color:#b84cff;
+}
+
+.breadcrumb-link i{
+    font-size:14px;
+}
+
+.separator{
+    color:#666;
+    font-size:14px;
+}
+
+.current-page{
+    color:#b84cff;
+    font-weight:600;
+}
+
+.back-btn{
+    display:flex;
+    justify-content: flex-end;
+    gap:10px;
+    margin-top: -65px;
+    margin-left: 14px;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
+}
+
+.back-btn:hover{
+    color: #b84cff;
+}
+
+.back-btn i{
+    transition:.3s;
+}
+
+.back-btn:hover i{
+    transform:translateX(-5px);
+}
+
+
+
+
+
+
+
+
+/*================ HERO CONTAINER ================*/
+.hero-container{
+    width:95%;
+    margin:35px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    gap:20px;
+}
+
+/*================ COMMON CARD ================*/
+.hero-left,
+.hero-middle,
+.hero-right{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    padding:30px;
+    transition:.4s;
+    overflow:hidden;
+}
+
+/*================ HOVER EFFECT ================*/
+
+.hero-left:hover,
+.hero-middle:hover,
+.hero-right:hover{
+    transform:translateY(-8px);
+    border:1px solid #b84cff;
+    box-shadow:
+    0 0 20px rgba(184,76,255,.35),
+    0 0 40px rgba(184,76,255,.18);
+}
+
+/*================ WIDTHS ================*/
+
+.hero-left{
+
+    width:46%;
+
+}
+
+.hero-middle{
+
+    width:37%;
+
+}
+
+.hero-right{
+
+    width:12%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:992px){
+
+.hero-container{
+
+    flex-direction:column;
+
+}
+
+.hero-left,
+.hero-middle,
+.hero-right{
+
+    width:100%;
+
+}
+
+}
+
+/*---------Left Card---------*/
+.hero-left h1{
+
+    font-size:48px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.hero-left h1 span{
+
+    color:#b84cff;
+
+}
+
+.hero-left p{
+
+    color:#bdbdbd;
+
+    line-height:30px;
+
+    margin:20px 0;
+
+}
+
+/*--------Counter Box--------*/
+.counter-wrapper{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.counter-box{
+
+    flex:1;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.counter-box i{
+
+    font-size:28px;
+
+    color:#b84cff;
+
+    margin-bottom:12px;
+
+}
+
+.counter-box h2{
+
+    font-size:32px;
+
+    margin-bottom:5px;
+
+}
+
+.counter-box span{
+
+    color:#bbb;
+
+    font-size:14px;
+
+}
+
+/*----------Middle Card----------*/
+.hero-middle h3{
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+.learn-list{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:25px;
+
+}
+
+.learn-list ul{
+
+    list-style:none;
+
+}
+
+.learn-list li{
+
+    margin-bottom:18px;
+
+    color:#d8d8d8;
+
+    font-size:16px;
+
+}
+
+.learn-list i{
+
+    color:#b84cff;
+
+    margin-right:10px;
+
+}
+
+/*---------------Right Card------------*/
+.hero-right{
+
+    position:relative;
+
+}
+
+.progress-text{
+
+    position:absolute;
+
+    text-align:center;
+
+}
+
+.progress-text h1{
+
+    font-size:55px;
+
+}
+
+.progress-text span{
+
+    color:#bdbdbd;
+
+}
+
+/*============ CIRCLE ============*/
+
+.skill-circle{
+
+    width:250px;
+    height:250px;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/*============ SVG ============*/
+
+.progress-ring{
+
+    transform:rotate(-90deg);
+
+}
+
+/*============ BACKGROUND ============*/
+
+.progress-bg{
+
+    fill:none;
+
+    stroke:#2d2345;
+
+    stroke-width:14;
+
+}
+
+/*============ PROGRESS ============*/
+
+.progress-value{
+
+    fill:none;
+
+    stroke:url(#gradient);
+
+    stroke:#9b3dff;
+
+    stroke-width:14;
+
+    stroke-linecap:round;
+
+    stroke-dasharray:534;
+
+    stroke-dashoffset:534;
+
+    animation:progressAnimation 2.5s ease forwards;
+
+    filter:drop-shadow(0 0 10px #b84cff)
+           drop-shadow(0 0 20px #b84cff);
+
+}
+
+/*============ TEXT ============*/
+
+.progress-content{
+
+    position:absolute;
+
+    text-align:center;
+
+}
+
+.progress-content h1{
+
+    font-size:65px;
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+}
+
+.progress-content p{
+
+    color:#d5d5d5;
+
+    font-size:22px;
+
+}
+
+/*============ ANIMATION ============*/
+
+@keyframes progressAnimation{
+
+    to{
+
+        stroke-dashoffset:27;
+
+    }
+
+}
+
+
+
+
+/*================ FILTER & SEARCH =================*/
+
+.project-top{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:40px 0;
+
+    gap:20px;
+
+}
+
+/*================ FILTER BUTTONS =================*/
+
+.filter-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.filter-buttons button{
+
+    padding:14px 28px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    color:#fff;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.filter-buttons button i{
+
+    margin-right:8px;
+
+}
+
+.filter-buttons button:hover{
+
+    border-color:#b84cff;
+
+    color:#b84cff;
+
+    transform:translateY(-3px);
+
+}
+
+.filter-buttons .active{
+
+    background:linear-gradient(90deg,#7c3aed,#ec4899);
+
+    border:none;
+
+    box-shadow:
+    0 0 15px rgba(184,76,255,.6),
+    0 0 35px rgba(184,76,255,.3);
+
+}
+
+/*================ SEARCH AREA =================*/
+
+.project-search{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/*================ SEARCH BOX =================*/
+
+.search-box{
+
+    width:320px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:0 18px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    transition:.35s;
+
+}
+
+.search-box:hover{
+
+    border-color:#b84cff;
+
+    box-shadow:0 0 18px rgba(184,76,255,.25);
+
+}
+
+.search-box i{
+
+    color:#9f9f9f;
+
+    font-size:17px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:15px;
+
+}
+
+.search-box input::placeholder{
+
+    color:#8d8d8d;
+
+}
+
+/*================ DROPDOWN =================*/
+
+.sort-box{
+
+    width:170px;
+
+}
+
+.sort-box select{
+
+    width:100%;
+
+    height:52px;
+
+    padding:0 18px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    color:#fff;
+
+    font-size:15px;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.sort-box select:hover{
+
+    border-color:#b84cff;
+
+    box-shadow:0 0 18px rgba(184,76,255,.25);
+
+}
+
+.sort-box option{
+
+    background:#111018;
+
+    color:#fff;
+
+}
+
+@media(max-width:992px){
+
+.project-top{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.project-search{
+
+    width:100%;
+
+}
+
+.search-box{
+
+    width:100%;
+
+}
+
+.sort-box{
+
+    width:180px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.filter-buttons{
+
+    flex-wrap:wrap;
+
+}
+
+}
+
+
+/*================ PROJECT CARD =================*/
+
+.project-card{
+
+    width:400px;
+    height:300px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    transition:.4s;
+
+    position:relative;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#b84cff;
+
+    box-shadow:
+    0 0 20px rgba(184,76,255,.35),
+    0 0 45px rgba(184,76,255,.18);
+
+}
+
+/*================ IMAGE =================*/
+
+.project-image{
+
+    width:100%;
+
+    height:30%;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
+
+}
+
+/*================ NEW BADGE =================*/
+
+.new-tag{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    background:#b84cff;
+
+    color:#fff;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/*================ CONTENT =================*/
+
+.project-content{
+
+    height:70%;
+
+    padding:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+/*================ HEADING =================*/
+
+.project-heading{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.project-heading h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+}
+
+/*================ LEVEL =================*/
+
+.level{
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    background:rgba(184,76,255,.15);
+
+    border:1px solid #b84cff;
+
+    color:#b84cff;
+
+    font-size:12px;
+
+}
+
+.project-content p{
+
+    color:#bdbdbd;
+
+    line-height:24px;
+
+    font-size:14px;
+
+    margin:12px 0;
+
+}
+
+/*================ PROJECT BUTTONS ================*/
+
+.project-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:18px;
+
+}
+
+/*================ LIVE DEMO BUTTON ================*/
+
+.live-btn{
+
+    flex:1;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    color:white;
+
+    border-radius:12px;
+
+    background:linear-gradient(90deg,#7c3aed,#b84cff);
+
+    transition:.4s;
+
+}
+
+.live-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 15px rgba(184,76,255,.6),
+    0 0 35px rgba(184,76,255,.3);
+
+}
+
+/*================ GITHUB BUTTON ================*/
+
+.code-btn{
+
+    width:55px;
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:22px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+}
+
+.code-btn:hover{
+
+    background:#24292e;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(255,255,255,.2);
+
+}
+
+/*================ ARROW BUTTON ================*/
+
+.arrow-btn{
+
+    width:55px;
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+}
+
+.arrow-btn:hover{
+
+    background:#b84cff;
+
+    transform:translateX(5px);
+
+    box-shadow:
+    0 0 15px rgba(184,76,255,.6);
+
+}
+
+/*================ SWIPER =================*/
+
+.swiper{
+
+    width:100%;
+
+    padding:20px 5px 60px;
+
+}
+
+.swiper-slide{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/*================ PAGINATION =================*/
+
+.custom-pagination{
+
+    width:100%;
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+/*================ PAGE NUMBERS =================*/
+
+.page-number{
+
+    width:45px;
+    height:45px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.page-number:hover{
+
+    border-color:#b84cff;
+
+    color:#b84cff;
+
+    transform:translateY(-3px);
+
+}
+
+.page-number.active{
+
+    background:linear-gradient(90deg,#7c3aed,#ec4899);
+
+    border:none;
+
+    box-shadow:
+    0 0 15px rgba(184,76,255,.6),
+    0 0 35px rgba(184,76,255,.3);
+
+}
+
+/*================ NEXT PREVIOUS =================*/
+
+.page-btn{
+
+    width:50px;
+    height:45px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.page-btn:hover{
+
+    background:#b84cff;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 15px rgba(184,76,255,.6);
+
+}
+
+/*================ SWIPER BULLETS =================*/
+
+.swiper-pagination{
+
+    margin-top:20px;
+
+}
+
+.swiper-pagination-bullet{
+
+    width:10px;
+
+    height:10px;
+
+    background:#666;
+
+    opacity:1;
+
+}
+
+.swiper-pagination-bullet-active{
+
+    width:30px;
+
+    border-radius:10px;
+
+    background:#b84cff;
+
+}
+
+/*================ SWIPER ARROWS =================*/
+
+.swiper-button-next,
+.swiper-button-prev{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+
+    background:#b84cff;
+
+    box-shadow:
+    0 0 15px rgba(184,76,255,.5);
+
+}
+
+/*================ RESPONSIVE =================*/
+
+@media(max-width:992px){
+
+    .project-card{
+
+        width:350px;
+
+        height:290px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .project-card{
+
+        width:100%;
+
+        max-width:340px;
+
+    }
+
+    .custom-pagination{
+
+        flex-wrap:wrap;
+
+    }
+
+}
+

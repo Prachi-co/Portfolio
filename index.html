@@ -5,193 +5,271 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <div class="Navbar">
-        <div id="">Home</div>
-        <div id="">About</div>
-        <div id="">Skills</div>
-        <div id="">Projects</div>
-        <div id="">Achievements</div>
-        <div id="">Contact</div>
-    </div> 
+<section class="Home-section" id="home" data-aos="fade-up">
+        <!-- Navbar -->
+    <nav>
+
+        <div class="logo">
+            <img src="./logo.png" alt="">
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About Me</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#freelancing">Freelancing Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <button class="talk-btn">
+            Let's connect
+        </button>
+
+    </nav>
+
+
+    <!---------------Home Section----------------->
     <h3>Hi, I'm 👋</h3> 
-    <h1>Prachi <span style="color: rgb(168, 85, 246);">Shah</span></h1> 
-    <h2>Frontend Developer & UI/UX Designer</h2>
-    <p>B.Tech CSE (AI & ML) graduate and SIH 2024 Winner passionate about building interactive, user-friendly and beautiful web experiences.</p>
-    <button>View My Work →</button>
-    <button>Download Resume ↓</button>
+    <h1 class="hero-title">Prachi <span style="color: rgb(168, 85, 246);">Shah</span></h1> 
+    <h2 class="hero-subtitle">Frontend Developer & UI/UX Designer</h2>
+    <p class="hero-text">B.Tech CSE (AI & ML) graduate and SIH 2024 Winner passionate about building interactive, user-friendly and beautiful web experiences.</p>
+    <a class="btn" href="#projects">View Projects →</a>
+    <a class="btn" href="">Download Resume ↓</a>
 
     <div class="social-icons">
         <a id="linkdin" href="https://www.linkedin.com/in/prachi-shah-5656a0327?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-            <img src="./assets/linkedin.jpg" alt="LinkdIn">
+            <img src="./assets/linkdin.jpg" alt="LinkdIn">
         </a>
 
         <a id="github" href="https://github.com/Prachi-co">
-            <i class="fab fa-github"></i>
+            <img src="./assets/github.jpg" alt="github">
         </a>
 
         <a id="gmail" href="mailto:prachisah89@gmail.com">
-            <img src="./assets/gmail.png" alt="Gmail">
+            <img src="./assets/gmail.jpg" alt="Gmail">
         </a>
     </div>
+</section>
 
-    <div class="about-me">
+<!=================About Me=====================>    
+    <section class="about-folder-section" id="about" data-aos="fade-left">
+        <!--------About Left---------->
         <div class="about-left">
-        <h3>ABOUT ME</h3>
-        <H1>Get to know me!</H1>
-        <p>I am a B.Tech CSE (AI & ML) graduate, a passionate Frontend Developer & UI/UX Designer. I love turning ideas into real-world web applications.</p>
-        <p>I am SIH 2024 Winner and enjoy creating seamless and interactive user experiences.</p>
+        <span class="section-tag">
+            About Me
+        </span>
+        <h2 style="color: white;">
+            Get to know me!    
+        </h2>
+        <p>I am a B.Tech CSE (AI&ML) graduate, a passionate Frontend Developer & UI/UX Designer. I love turning ideas into real-world web applications.</p>
+        <p>I am an SIH 2024 Winner and enjoy creating seamless and interactive user experiences.</p>
         </div>
-        
-        <div class="about-right">
-            <div class="card">
-                <i class="education"></i>
-                <h3>Education</h3>
-                <p>B.Tech CSE (AI-ML)</p>
-            </div>            
-            <div class="card">
-                <i class="Experience"></i>
-                <h3>Experience</h3>
-                <p>UI/UX Design Intern</p>
+
+    <!------------About Right----------->
+    <div class="journey">
+
+    <!-- Education -->
+    <div class="cards2">
+        <div class="back-card">
+    <div class="swiper certificateSwiper">
+
+        <div class="swiper-wrapper" id="swipper1">
+            <div class="swiper-slide">
+                <img src="./assets/certificate11.jpg">
             </div>
-            <div class="card">
-                <i class="Achievement"></i>
-                <h3>Achievement</h3>
-                <p>SIH 2024 winner</p>
+
+            <div class="swiper-slide">
+                <img src="assets/certificate2.jpg">
             </div>
-            <div class="card">
-                <i class="Location"></i>
-                <h3>Location</h3>
-                <p>Gurgaon, Haryana</p>
+
+            <div class="swiper-slide">
+                <img src="assets/certificate3.jpg">
             </div>
+
+            <div class="swiper-slide">
+                <img src="assets/marksheet.jpg">
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</div>
+
+        <div class="front-card">
+            <div class="icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h2>Education</h2>
+            <h4>B.Tech CSE (AI & ML)</h4>
+            <p>GD Goenka University, Haryana <br> 
+                2022 - 2026 <br>
+                <hr id="line">                       
+            </p> 
+
+            <div class="heading">
+                <span class="dot"></span>
+                <span>Focused on Artificial Intelligence and Machine Learning</span>
+            </div>
+            
+            <div class="heading2">
+                <span class="dot2"></span>
+                <span>Passionate about Web Development & UI/UX Design</span>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- Experience -->
+
+    <div class="cards2">
+        <div class="back-card">
+    <div class="swiper certificateSwiper">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./assets/certificate1.jpeg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./assets/certificate2.jpeg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./assets/certificate3.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./assets/certificate4.jpeg">
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</div>
+        <div class="front-card">
+
+            <div class="icon">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h2>Experience</h2>
+            <h4>SIH 2024 - Joint Winner</h4>
+            <p>Problem Statement: SIH1722 <br>(Gamification of Anti-Doping) </p>
+            
+            <a href="#">View Experience →</a></p>
+
         </div>
     </div>
+    </div>
+</section>
+    </section>
+
+
+
+
     
 
     
 <!--================ SKILLS ================-->
 
-<section class="skills-section">
-
-    <h2 class="section-title">Skills</h2>
-
+<section class="skills-section" id="skills" data-aos="zoom-in" data-aos-delay="100" >
     <div class="skills-container">
-        <div class="skill-card">
-            <img src="assets/html.png">
-            <h3>HTML</h3>
-            <p>Markup Language</p>
 
-            <div class="progress">
-                <div class="fill html"></div>
-            </div>
-
-            <span>95%</span>
-        </div>
-
-        <div class="skill-card">
-            <img src="assets/css.png">
-            <h3>CSS</h3>
-            <p>Modern Styling</p>
-
-            <div class="progress">
-                <div class="fill css"></div>
-            </div>
-
-            <span>90%</span>
-        </div>
-
-        <div class="skill-card">
-            <img src="assets/javascript.png">
-            <h3>JavaScript</h3>
-            <p>Interactive Web</p>
-
-            <div class="progress">
-                <div class="fill js"></div>
-            </div>
-
-            <span>88%</span>
-        </div>
-
-        <div class="skill-card">
-            <img src="assets/react.png">
-            <h3>React</h3>
-            <p>Frontend Library</p>
-
-            <div class="progress">
-                <div class="fill react"></div>
-            </div>
-
-            <span>80%</span>
-        </div>
-
-        <div class="skill-card">
-            <img src="assets/figma.png">
-            <h3>Figma</h3>
-            <p>UI/UX Design</p>
-
-            <div class="progress">
-                <div class="fill figma"></div>
-            </div>
-
-            <span>92%</span>
-        </div>
-
-        <div class="skill-card">
-            <img src="assets/flutter.png">
-            <h3>Flutter</h3>
-            <p>Cross Platform</p>
-
-            <div class="progress">
-                <div class="fill flutter"></div>
-            </div>
-
-            <span>78%</span>
-        </div>
-
-        <div class="skill-card">
-            <img src="assets/android.png">
-            <h3>Android Studio</h3>
-            <p>Android Development</p>
-
-            <div class="progress">
-                <div class="fill android"></div>
-            </div>
-
-            <span>75%</span>
-        </div>
-
-        <div class="skill-card">
-            <img src="assets/git.png">
-            <h3>Git & GitHub</h3>
-            <p>Version Control</p>
-
-            <div class="progress">
-                <div class="fill github"></div>
-            </div>
-
-            <span>85%</span>
-        </div>
-
+        <!---------------- Header ---------------------> 
+         <div class="skills-header"> 
+            <div class="skills-title"> 
+                <span class="section-tag"> ✨ Skills </span> 
+                <h2> My Technical Skills </h2> 
+            </div> 
+           
     </div>
+
+    <!-- ================= Slider ================= --> 
+     <div class="skills-slider-wrapper"> 
+
+        <!-- Cards --> 
+         <div class="skills-slider" id="skillsSlider"></div>
+
+         <!-- ================= HTML ================= --> 
+          <div class="skill-card"> 
+            <div class="skill-top"> 
+                <div class="skill-image"> 
+                    <img src="./assets/html.jpeg" alt="HTML"> 
+                </div> 
+                <div class="skill-content"> 
+                    <h3>HTML</h3> 
+                    <span>Markup Language</span> 
+                </div> 
+            </div> 
+            <div class="progress-section"> 
+                <div class="progress-bar"> 
+                    <div class="progress-fill html" data-width="95">                 
+                    </div> 
+                </div> 
+                <span>95%</span> 
+                <p> 18+ Mini Projects Built </p> 
+                <a href="mini projects.html">View Project →</a>
+            </div>  
+     
+        </div>
+
+        <!-- ================= CSS ================= --> 
+         <div class="skill-card"> 
+            <div class="skill-top"> 
+                <div class="skill-image"> 
+                    <img src="images/css.png" alt="CSS"> 
+                </div> <div class="skill-content"> 
+                    <h3>CSS</h3> 
+                    <span>Styling Language</span> 
+                </div> 
+            </div> 
+            <div class="progress-section"> 
+                <div class="progress-bar"> 
+                    <div class="progress-fill css" data-width="90">                        
+                    </div> 
+                </div> 
+                <span>90%</span> 
+                <p> 15+ Responsive Websites </p> 
+                <a href="#">View Project →</a>
+            </div> 
+            
+        </div>     
+    
 
 </section>
     
 <!----------------Project Section---------------->
-    <section class="projects">
-    <h3 class="section-title">📁 PROJECTS</h3>
+    <section class="projects" id="projects" data-aos="zoom-in">
+    <h3 class="section-title">PROJECTS</h3>
 
     <div class="project-card">
 
         <!-- Left Side -->
         <div class="project-info">
-            <h2>Food Edition Tic Tac Toe</h2>
-            <p>
-                A fun and interactive Tic Tac Toe game with food emojis,
-                glassmorphism UI, smooth animations and winning effects.
+            <h2 id="projectTitle">Food Edition Tic Tac Toe</h2>
+            <p id="projectDescription">A fun and interactive Tic Tac Toe game - Food Edition with a modern twist on the classic Tic Tac Toe game. Players choose fun food-themed symbols instead of the traditional X and O, with smooth animations, hover effects, interactive popups, and a responsive user interface for an engaging gameplay experience.
             </p>
 
             <div class="tech-stack">
@@ -201,13 +279,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             </div>
 
             <div class="buttons">
-                <a href="https://prachi-co.github.io/Tic-Tac-Toe/" class="live-btn">Live Demo</a>
-                <a href="https://github.com/Prachi-co/Tic-Tac-Toe" class="github-btn">GitHub</a>
+                <a id="liveLink" href="https://prachi-co.github.io/Tic-Tac-Toe/" class="live-btn" class="live-btn">Live Demo</a>
+                <a id="githubLink" href="https://github.com/Prachi-co/Tic-Tac-Toe" class="github-btn" >GitHub</a>
             </div>
         </div>
 
         <!-- Right Side -->
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" id="projectSlider">
 
     <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -232,8 +310,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </div>
 
     <div class="view-all">
-        <a href="projects.html">
-            View All Projects →
+        <a id="nextProject" class="next-btn">
+            Next Project →
         </a>
     </div>
 </section>
@@ -242,11 +320,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <!----------------Freelancing Section---------------->
 <h3 class="section-title">Freelancing Projects</h3>
 
-<section class="freelancing">
+<section class="freelancing" id="freelancing" data-aos="flip-left">
 
     <div class="free-card">
         <div class="free-image">
-            <img src="./assets/project1.png" alt="">
+            <img src="./assets/tictactoe4.png" alt="">
         </div>
         <div class="free-content">
             <h2>Portfolio Website</h2>
@@ -256,7 +334,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             </p>
             <a href="#">View Project →</a>
         </div>
-
     </div>
 
     <div class="free-card">
@@ -269,158 +346,100 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 Responsive startup landing page with
                 animations and premium UI.
             </p>
-            <a href="#">View Project →</a>
+            <a id="nextProject" class="next-btn">View Project →</a>
         </div>
 
     </div>
 </section> 
 
 
-<!--================== ACHIEVEMENTS ==================-->
-<section class="achievements" id="achievements">
-
-    <h2 class="section-title">Achievements</h2>
-
-    <div class="achievement-container">
-        <!-- Card 1 -->
-        <div class="achievement-card">
-            <div class="achievement-icon">🏆</div>
-            <h3>SIH 2024 Winner</h3>
-            <p>
-                Won Smart India Hackathon 2024 among
-                thousands of teams by developing an AI
-                solution for Anti-Doping Awareness.
-            </p>
-            <span>National Level</span>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="achievement-card">
-            <div class="achievement-icon">💼</div>
-            <h3>UI/UX Internship</h3>
-            <p>
-                Completed UI/UX Design Internship and
-                designed modern web and mobile
-                interfaces.
-            </p>
-            <span>3 Months</span>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="achievement-card">
-            <div class="achievement-icon">🎓</div>
-            <h3>B.Tech Graduate</h3>
-            <p>
-                Successfully completed Bachelor of
-                Technology in Computer Science
-                (AI & ML).
-            </p>
-            <span>2026</span>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="achievement-card">
-            <div class="achievement-icon">💡</div>
-            <h3>Hackathons</h3>
-            <p>
-                Participated in multiple Hackathons,
-                Ideathons and Innovation Challenges.
-            </p>
-            <span>10+ Events</span>
-        </div>
-
-    </div>
-</section>
-
-
 
 <!--================ GET IN TOUCH =================-->
 
-<section class="contact" id="contact">
-
-    <h2 class="section-title">GET IN TOUCH</h2>
+<section class="contact-section" id="contact" data-aos="fade-up">
+    <div class="contact-title">
+        <h2>
+            <i class="fa-solid fa-paper-plane"></i>
+            Get In Touch
+        </h2>
+    </div>
 
     <div class="contact-container">
-
         <!-- Left Side -->
-        <div class="contact-info"></div>
-            <div class="info-box">
-                <i class="fas fa-envelope"></i>
-                <div>
-                    <h4>Email</h4>
-                    <p>prachishah89@gmail.com</p>
-                </div>
-            </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i><br><br><br>
+                <i class="fa-solid fa-phone"></i><br><br><br>
+                <i class="fa-solid fa-location-dot"></i><br><br><br>
+                <i class="fa-brands fa-linkedin"></i><br><br><br>
+                <i class="fa-brands fa-github"></i><br><br><br><br>
 
-            <div class="info-box">
-                <i class="fas fa-phone"></i>
-                <div>
-                    <h4>Phone</h4>
-                    <p>+91 7290665409</p>
-                </div>
+            <div class="contact-text">
+                <p>prachisah89@gmail.com
+                    <br><br><br>+91 7209665409
+                    <br><br><br>Gurgaon, Haryana
+                    <br><br><br>Gurgaon, Haryana
+                    <br><br><br>Gurgaon, Haryana <br><br><br>
+                </p>
+            </div>                       
             </div>
-
-            <div class="info-box">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                    <h4>Location</h4>
-                    <p>Gurgaon, Haryana</p>
-                </div>
-            </div>
-
-            <div class="info-box">
-                <i class="fab fa-linkedin"></i>
-                <div>
-                    <h4>LinkedIn</h4>
-                    <p>linkedin.com/in/prachi</p>
-                </div>
-            </div>
-
-            <div class="info-box">
-                <i class="fab fa-github"></i>
-                <div>
-                    <h4>GitHub</h4>
-                    <p>github.com/Prachi-co</p>
-                </div>
-            </div>
-
         </div>
 
-
-        <!-- Right Side -->
+        <!-----------Contact Form---------->
         <div class="contact-form">
             <form>
                 <div class="input-row">
                     <input
                     type="text"
-                    placeholder="Your Name">
+                    placeholder="Your Name"
+                    required>
 
                     <input
                     type="email"
-                    placeholder="Your Email">
+                    placeholder="Your Email"
+                    required>
                 </div>
 
                 <textarea
-                placeholder="Your Message"></textarea>
+                placeholder="Your Message"
+                rows="6"
+                required></textarea>
 
-                <button>
-                    Send Message ✈
+                <button type="submit" class="send-btn">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
                 </button>
-
             </form>
         </div>
 
-
-        <!-- Right Image -->
+        <!-- Right Side -->
         <div class="contact-image">
-            <img src="assets/mail.jpeg">
+            <img
+            src="./assets/mail.jpeg"
+            alt="Contact">
         </div>
+    </div>       
+    
 
-    </div>
+
 </section>
 
 
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1200,
+    easing: "ease-in-out",
+    once: true
+});
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<script src="script.js"></script>
 </body>
 </html>
